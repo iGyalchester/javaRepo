@@ -57,6 +57,100 @@ public class HelloWorld {
         String s = "Yo, Chill!";
 
         System.out.println(s.charAt(6));
+
+        System.out.println(Math.max(5  , 60));
+        System.out.println(Math.sqrt(69));
+        System.out.println(Math.abs(-9.5));
+        System.out.println(Math.random()*256);
+        int randomNum = (int)(Math.random() * 894);  // 0 to 100
+        System.out.println(randomNum);
+
+        int x = 6;
+        int y = 25;
+        System.out.println(Math.max(x, y));
+
+        boolean isJavaHard = true;
+        boolean isDietCokeTasty = false;
+        System.out.println(isJavaHard);
+        System.out.println(isDietCokeTasty);
+
+        System.out.println(x > y);
+
+        System.out.println(10 > 9);
+
+        System.out.println(10 == 15);
+
+        if (35 > 22) {
+            System.out.println("35 is greater than 22");
+        }
+
+        if (x > y) {
+            System.out.println("x is greater than y");
+
+        } else {
+            System.out.println("That's not right.");
+        }
+
+        int time = 20;
+        if (time < 18) {
+            System.out.println("Good day.");
+        } else {
+            System.out.println("Good evening.");
+        }
+
+        int animals = 5;
+        switch (animals) {
+            case 1:
+                System.out.println("Dog");
+                break;
+            case 2:
+                System.out.println("Cat");
+                break;
+            case 3:
+                System.out.println("Owl");
+                break;
+            case 4:
+                System.out.println("Monkey");
+                break;
+            case 5:
+                System.out.println("Snake");
+                break;
+            case 6:
+                System.out.println("Racoon");
+                break;
+            case 7:
+                System.out.println("Weasel");
+                break;
+            default:
+                System.out.println("Looking forward to my new pet!");
+        }
+        int i = 0;
+        while (i < 21) {
+            System.out.println(i);
+            i++;
+        }
+
+//        int i = 0;
+//        do {
+//            System.out.println(i);
+//            i++;
+//        }
+//        while (i < 5);
+
+        for (int b = 0; b < 5; b++) {
+            System.out.println(b);
+        }
+        for (int c = 0; c <= 10; c = c + 2) {
+            System.out.println(c);
+        }
+
+        for (int d = 0; d < 10; d++) {
+            if (d == 4) {
+                break;
+            }
+            System.out.println(d);
+        }
     }
+
 
 }
