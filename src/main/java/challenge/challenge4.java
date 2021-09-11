@@ -8,6 +8,7 @@ public class challenge4 {
 
 }
     public static String getLastElement(String[] names) {
+
         String lastElement = names[names.length -1];
         return lastElement;
     }

@@ -3,9 +3,9 @@ package challenge;
 public class challenge9 {
     public static String extractAllEvenNumbers(int[] numbers) {
         String evenNumbers = " ";
-        for (int i = 0; i < numbers.length; i++){
-            if (numbers[i] % 2 == 0) {
-                evenNumbers += numbers[i] + " ";
+        for (int num : numbers){
+            if (num % 2 == 0) {
+                evenNumbers += num + " ";
             }
         }
         return evenNumbers;

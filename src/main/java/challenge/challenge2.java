@@ -2,6 +2,8 @@ package challenge;
 
 public class challenge2 {
     public static int getSecondToLastIndex(String[] names) {
+        //crated a variable to hold secontolast index
+        //
         int secondToLast = names.length - 2;
         return secondToLast;
     }
