@@ -3,15 +3,15 @@ package challenge;
 public class challenge7 {
     public static int getAverage(int[] ints) {
         //sum of numbers in array
-        int sum = 0;
+        int avg = 0;
 
         // iterate using a for loop
-        for (int i = 0; i < ints.length; i++){
+        for (int num : ints){
             // add elements to sum
-            sum += ints[i] / ints.length;
+            avg += num / ints.length;
 
         }
-        return sum;
+        return avg;
     }
     public static void main(String[] args) {
         int[] numList = {60, 30, 35, 86, 55, 375};

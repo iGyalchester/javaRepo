@@ -3,9 +3,9 @@ package challenge;
 public class challenge8 {
     public static String extractAllOddNumbers(int[] numbers) {
         String oddNumbers = " ";
-        for (int i = 0; i< numbers.length; i++){
-            if (numbers[i] % 2 != 0) {
-                oddNumbers += numbers[i] + " ";
+        for (int num : numbers){
+            if (num % 2 != 0) {
+                oddNumbers += num + " ";
             }
         }
         return oddNumbers;

@@ -19,7 +19,7 @@ public class challenge11 {
     public static void main(String[] args) {
         String[] numList = {"60", "Critical", "Girth", "Length", "995"};
 
-        System.out.println(getIndexByElement(numList, "995"));
+        System.out.println(getIndexByElement(numList, "Critical"));
 /*
 testing
 */
