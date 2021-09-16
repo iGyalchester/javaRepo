@@ -5,6 +5,7 @@ public class Square {
     public double Side, Area;
 
     public Square(double Side){
+
         this.Side = Side;
     }
     public void theArea (){

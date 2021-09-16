@@ -4,12 +4,17 @@ public class Sphere {
     public double radius, height, Pi, Area;
     public Sphere(){ };
 
+    private static final double PI = 3.14;
+
     public Sphere(double radius){
         this.radius = radius;
         this.height = height;
-        this.Pi = 3.14;
-        this.Area = 4 * (Pi * Math.pow(radius, 2));
+        this.Pi = PI;
+    }
 
+    public void theArea (){
+        this.Area = 4 * (Pi * Math.pow(radius, 2));
+        System.out.println(Area);
     }
 
     @Override

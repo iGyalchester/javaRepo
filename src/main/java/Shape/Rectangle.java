@@ -10,8 +10,10 @@ public class Rectangle {
         this.width = width;
         this.len = len;
 
+    }
+    public void thePerimiter (){
         this.perimeter = 2 * (width + len);
-
+        System.out.println(perimeter);;
     }
 
     @Override

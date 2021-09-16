@@ -7,8 +7,10 @@ public class Triangle {
         this.base = base;
         this.height = height;
 
-        this.Area = (base * height) / 2.0;
-
+    }
+    public void theArea (){
+        this.Area = (base * height) / 2.0;;
+        System.out.println(Area);;
     }
 
     @Override
