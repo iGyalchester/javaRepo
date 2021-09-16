@@ -4,6 +4,7 @@ public class TotalBill {
     public static void main(String[] args) {
         double bills[] = {1.5,1.9,2.8,5.7};
 
+        System.out.println(bills[2]);
         System.out.println(calculateTotalBill(bills));
 
 
@@ -20,7 +21,7 @@ public class TotalBill {
 
         for(int i =0;i<bills.length;i++){
 
-            currentBill+=bills[i]; //i instead of 2.
+            currentBill+=bills[i]; //i instead of 2. +=addition assignment
         }
         return currentBill;
     }

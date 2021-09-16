@@ -2,20 +2,17 @@ package challenge;
 
 public class challenge16 {
     public static void main(String[] args) {
-        System.out.println(VowelsCounter("Gummybears"));
+        System.out.println(VowelsCounter("Vowels"));
 
     }
     public static int VowelsCounter(String str){
+
+        String[] vowels = {"A", "E", "I", "O", "U", "Y"};
         int counter = 0;
 
-        for (int i = 0; i < str.length(); i++){
+        for (String vowel : vowels){
             //convert charachter to lower case before comparing it.
-            if(Character.toLowerCase(str.charAt(i)) == 'a'
-                    || Character.toLowerCase(str.charAt(i)) == 'e'
-                    || Character.toLowerCase(str.charAt(i)) == 'i'
-                    || Character.toLowerCase(str.charAt(i)) == 'o'
-                    || Character.toLowerCase(str.charAt(i)) == 'u'
-                    || Character.toLowerCase(str.charAt(i)) == 'y'){
+            if(str.equalsIgnoreCase(vowel)){
                 counter ++;
             }
 
