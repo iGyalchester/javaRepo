@@ -20,7 +20,7 @@ public class Circle {
     }
     public void theArea (){
         this.Area = Pi * (Math.pow(radius, 2));
-        System.out.println(Area);;
+        System.out.println(Area);
     }
 
     @Override
