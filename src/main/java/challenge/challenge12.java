@@ -3,7 +3,7 @@ package challenge;
 public class challenge12 {
     public static void printOddNumbersInRange(int start, int end){
 
-        String oddNumber = " ";
+        String oddNumber = "";
 
         for (int i = start; i <=end; i+=2){
             oddNumber += i+ "\n";
@@ -13,7 +13,7 @@ public class challenge12 {
 
     public static void main(String[] args) {
 
-        printOddNumbersInRange(1, 50);
+        printOddNumbersInRange(1, 100);
 
     }
 

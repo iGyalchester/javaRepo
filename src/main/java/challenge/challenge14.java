@@ -7,9 +7,9 @@ public class challenge14 {
 
     }
     public static String repeatFirstThreeLetters(String str, int n) {
-        String substr = str.substring(0, 3) + "\n";
+        String substring = str.substring(0,3) + " ";
 
-        return substr.repeat(n);
+        return substring.repeat(n);
 
     }
 }
