@@ -5,8 +5,8 @@ public class Calculator {
     public double num, add, subtract, divide, multiply, exponents;
 
     public Calculator() {
-    }
 
+    }
 
     public void sum (double num1, double num2){
         this.add = num1 + num2;
