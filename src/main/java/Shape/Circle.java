@@ -12,7 +12,6 @@ public class Circle {
         this.radius = radius;
         this.Pi = PI;
 
-
     }
     public void findCircumference (){
         this.Circumference = 2 *(Pi * radius);
