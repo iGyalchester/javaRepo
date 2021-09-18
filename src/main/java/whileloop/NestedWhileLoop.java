@@ -8,7 +8,7 @@ public class NestedWhileLoop {
             int subNum = num;
             while(subNum >= 0){
                 System.out.print(subNum + " ");
-                subNum--; //count = count + 1;
+                subNum--;
             }
             System.out.println();
             num--;
