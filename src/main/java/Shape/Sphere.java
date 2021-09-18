@@ -4,12 +4,11 @@ public class Sphere {
     public double radius, height, Pi, Area;
     public Sphere(){ };
 
-    private static final double PI = 3.14;
 
     public Sphere(double radius){
         this.radius = radius;
         this.height = height;
-        this.Pi = PI;
+        this.Pi = Math.PI;
     }
 
     public void theArea (){
