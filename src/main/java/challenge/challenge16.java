@@ -13,6 +13,7 @@ public class challenge16 {
         for (String vowel : vowels){
             //convert charachter to lower case before comparing it.
             if(str.equalsIgnoreCase(vowel)){
+
                 counter ++;
             }
 
@@ -20,4 +21,5 @@ public class challenge16 {
 
         return counter;
     }
+
 }

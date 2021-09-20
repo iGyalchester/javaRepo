@@ -29,4 +29,12 @@ public class WhileLoopClass {
         System.out.println(count);;
     }
 
+    @Override
+    public String toString() {
+        return "WhileLoopClass{" +
+                "num1=" + num1 +
+                ", num2=" + num2 +
+                ", count=" + count +
+                '}';
+    }
 }
