@@ -21,6 +21,6 @@ public class DoWhileLoop {
             System.out.println(count);
             System.out.println("-------------------");
 
-        } while (number >= 1);
+        } while (number >= 1);//while true
     }
 }

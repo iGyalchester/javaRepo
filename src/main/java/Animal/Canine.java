@@ -1,14 +1,14 @@
 package Animal;
 
-public class Cheetah extends Animal{
+public abstract  class Canine extends Animal{
 
-    public Cheetah(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
+    public Canine(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
         super(Name, AnimalType, Intelligence, Power, Mobility, Health, Stealth, Weight);
     }
 
     @Override
     public String toString() {
-        return "Cheetah{" +
+        return "Canine{" +
                 "Intelligence=" + Intelligence +
                 ", Power=" + Power +
                 ", Defense=" + Defense +

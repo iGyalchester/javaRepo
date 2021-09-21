@@ -1,14 +1,18 @@
 package Animal;
 
-public class Cheetah extends Animal{
+public abstract class Feline extends Animal{
 
-    public Cheetah(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
+    public Feline(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
         super(Name, AnimalType, Intelligence, Power, Mobility, Health, Stealth, Weight);
+    }
+
+    public void eat (){
+        System.out.println("Eat People");
     }
 
     @Override
     public String toString() {
-        return "Cheetah{" +
+        return "Feline{" +
                 "Intelligence=" + Intelligence +
                 ", Power=" + Power +
                 ", Defense=" + Defense +
@@ -20,4 +24,5 @@ public class Cheetah extends Animal{
                 ", AnimalType='" + AnimalType + '\'' +
                 '}';
     }
+
 }
