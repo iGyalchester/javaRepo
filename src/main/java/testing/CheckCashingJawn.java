@@ -3,11 +3,14 @@ package testing;
 public class CheckCashingJawn {
     public static void main(String[] args) {
         //create an array to hold employees
+        //instantiate and declaring a list of employee
         Employee[] employees = new Employee[3];
         //Create an HireDate
         HireDate hireDate = new HireDate("9","21","2021");
         //create two employee objects
         HourlyEmployee mcSHan = new HourlyEmployee("McSHan", hireDate, 16.0);
+
+        //modifying hour
         mcSHan.setHourlyWage(25.0);
         mcSHan.setHoursWorked(40);
 
