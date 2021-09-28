@@ -9,6 +9,5 @@ public class DotehMath {
         numbers.division(30, 60);
         numbers.multiplication(30, 60);
         numbers.Xponent(2, 5);
-
     }
 }

@@ -10,6 +10,10 @@ public class Dog extends Canine{
         System.out.println("Eating");
     }
 
+    public boolean fetch(){
+        return true;
+    }
+
     @Override
     public String toString() {
         return "Dog{" +
