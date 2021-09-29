@@ -1,0 +1,30 @@
+    HashMap is literally just a list of  keys and values.
+-- map(K - the type of keys maintained by this map, V - the type of mapped values)
+    Keys cannot be repeated.
+
+	in this case, we are mapping names to phone numbers.
+	Map<String, String> phoneBook = new HashMap<>();
+
+	printing individual key from map.
+	sout(map.get(k/v));
+
+
+	looping though and printing data in a Map:
+
+	Set<K> keys = map.keySet();
+	for(K key :keys){
+	sout(key+ " " + map.get(key));
+	}
+
+	Another way to create HashMap
+	HashMap example = new HashMap();
+	example.put(k,v);
+
+    replaciong in hashmap:
+    sout(example.replace(k,v);
+
+
+
+
+
+

@@ -1,31 +1,27 @@
-package animalcrossing;
-
-public class Shit {
-    public static void main(String[] args) {
-
-       //Creating Animal Objects
-//        Animal animal1 = new Animal();
-//        animal1.makeNoise();
+//package animalcrossing;
 //
-//        Animal animal2 = new Animal();
-//        animal2.makeNoise();
-
-        //Objects live on the HEAP
-        //methods and Local and reference Variables live on the stack
-
-
+//public class Shit {
+//    public static void main(String[] args) {
+//
+////        Animal animal1 = new Animal();
+////        animal1.makeNoise();
+////
+////        Animal animal2 = new Animal();
+////        animal2.makeNoise();
+//
+//
 //        Animal dog = new Dog();
 //        dog = new Cat();
 //        ((Cat)dog).scratch();
-
-       // dog.makeNoise();
-        //System.out.println(((Dog) dog).fetch());
-
-
+//
+//        dog.makeNoise();
+//        System.out.println(((Dog) dog).fetch());
+//
+//
 //        dog.makeNoise();
 //
-
-
+//
+//
 //
 //        Dog dog = new Dog("dog cookies");
 //        Cat cat = new Cat("fish and milk");
@@ -35,30 +31,30 @@ public class Shit {
 //        arrayOfAnimals[1] = cat;
 //
 //     Animal.printAnimalNoiseAndWhatTheyEat(arrayOfAnimals);
-
-
-
-
-
-
-
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
- */
+//
+//
+//
+//
+//
+//
+//
+//
+//    }
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+///*
+//
+//
+//
+//
+// */

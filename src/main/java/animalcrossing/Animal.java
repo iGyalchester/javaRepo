@@ -28,7 +28,6 @@ public abstract class Animal {
                 animal.makeNoise();
                 //we still need to solve the issue below
                 animal.printAnimalFood();
-
         }
     }
 
