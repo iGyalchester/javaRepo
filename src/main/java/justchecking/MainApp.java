@@ -17,9 +17,7 @@ public class MainApp {
 		Bike bike = new Bike("Suzuki", 12690, 190 );
 		vehicles[2] = bike;
 
-		car.printVehicleNamesAndPrices();
-		truck.printVehicleNamesAndPrices();
-		bike.printVehicleNamesAndPrices();
+		Vehicle.printVehicleNamesAndPrices(vehicles);
 
 		//arrayList of driveable cars
 		ArrayList <DriveAble> driveAbles = new ArrayList<DriveAble>();
@@ -27,8 +25,7 @@ public class MainApp {
 		driveAbles.add(car);
 		driveAbles.add(truck);
 
-		System.out.println(car.getSpeedOfDriveAbleVehicles());
-		System.out.println(truck.getSpeedOfDriveAbleVehicles());
+		Vehicle.getSpeedOfDriveAbleVehicles(vehicles);
 
 
 		System.out.println(car.totalBeforeTax());

@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Vehicle implements DriveAble {
+public abstract class Vehicle implements DriveAble {
+
 	private String name;
 	private double price;
 	private int speed;
-	private double tax = 15;
+	private final double tax = 15;
 
 	public Vehicle(String name, double price, int speed) {
 		this.name = name;
@@ -37,15 +38,23 @@ public class Vehicle implements DriveAble {
 		return price;
 	}
 
-
-	public void printVehicleNamesAndPrices() {
-		System.out.println(name + " : " + price);
+	public static void printVehicleNamesAndPrices(Vehicle[] vehicles) {
+		for (Vehicle vehicle : vehicles) {
+			System.out.println(vehicle.name + " : " + vehicle.price);
+		}
 	}
 
 
-	public double getSpeedOfDriveAbleVehicles() {
-		return this.speed;
+	public static void getSpeedOfDriveAbleVehicles(Vehicle[] vehicles) {
+		for (Vehicle vehicle : vehicles) {
+			System.out.println(vehicle.speed);
+		}
+
 	}
 
 
+	@Override
+	public void PlaceHolder() {
+
+	}
 }
