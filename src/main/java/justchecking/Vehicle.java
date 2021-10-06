@@ -1,36 +1,21 @@
 package justchecking;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+public abstract class Vehicle implements DriveAble{
 
-public abstract class Vehicle implements DriveAble {
-
+	private int qty;
 	private String name;
 	private double price;
 	private int speed;
-	private final double tax = 15;
+	private final double TAX = 0.15;
+	private Engine engine;
 
-	public Vehicle(String name, double price, int speed) {
+	public Vehicle(String name, int qty, double price, Engine engine, int speed) {
+		this.engine = engine;
+		this.qty = qty;
 		this.name = name;
 		this.price = price;
 		this.speed = speed;
 
-	}
-
-	public double totalBeforeTax(){
-		return this.price;
-	}
-
-	public double totalAfterTax(){
-		double taxed = (price * tax) / 100;
-
-		return taxed + price;
-	}
-
-
-	public String getName() {
-		return name;
 	}
 
 
@@ -38,23 +23,37 @@ public abstract class Vehicle implements DriveAble {
 		return price;
 	}
 
-	public static void printVehicleNamesAndPrices(Vehicle[] vehicles) {
-		for (Vehicle vehicle : vehicles) {
-			System.out.println(vehicle.name + " : " + vehicle.price);
-		}
+	public int getQty() {
+		return qty;
+	}
+
+	public double getTax() {
+		return this.TAX;
+	}
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public int getSpeed() {
+		return this.speed;
+	}
+
+	public double totalBeforeTax(Vehicle vehicle){
+		return this.price * this.qty;
+	}
+
+	public double calcTax(Vehicle vehicle) {
+		return (vehicle.totalBeforeTax(vehicle) * this.TAX);
+	}
+
+	public abstract double totalAfterTax(Vehicle vehicle);
+
+	public String getName() {
+		return this.name;
 	}
 
 
-	public static void getSpeedOfDriveAbleVehicles(Vehicle[] vehicles) {
-		for (Vehicle vehicle : vehicles) {
-			System.out.println(vehicle.speed);
-		}
-
-	}
 
 
-	@Override
-	public void PlaceHolder() {
-
-	}
 }

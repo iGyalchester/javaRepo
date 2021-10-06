@@ -1,9 +1,9 @@
 package justchecking;
 
-public class Car extends Vehicle{
+public class MotorBike extends Vehicle{
+	private int numIfWheels;
 
-
-	public Car(String name, int qty, double price, Engine engine, int speed) {
+	public MotorBike(String name, int qty, double price, Engine engine, int speed) {
 		super(name, qty, price, engine, speed);
 	}
 
@@ -12,8 +12,10 @@ public class Car extends Vehicle{
 		return vehicle.totalBeforeTax(vehicle) + calcTax(vehicle);
 	}
 
+
 	@Override
 	public int milesPerHour() {
-		return this.getSpeed();
+		return getSpeed();
 	}
+
 }

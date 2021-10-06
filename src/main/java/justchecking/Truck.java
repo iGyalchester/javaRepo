@@ -2,17 +2,24 @@ package justchecking;
 
 public class Truck extends Vehicle{
 	private double price;
-	private double tax = 20;
 
-	public Truck(String name, double price, int speed) {
-		super(name, price, speed);
+	public Truck(String name, int qty, double price, Engine engine, int speed) {
+		super(name, qty, price, engine, speed);
 	}
 
 	@Override
-	public double totalAfterTax(){
-		double taxed = (this.price * tax) / 100;
-
-		return taxed + price;
+	public double calcTax(Vehicle vehicle) {
+		double TAX = 0.20;
+		return (vehicle.totalBeforeTax(vehicle) * TAX);
+	}
+	@Override
+	public double totalAfterTax(Vehicle vehicle){
+		return vehicle.totalBeforeTax(vehicle) + calcTax(vehicle);
 	}
 
+
+	@Override
+	public int milesPerHour() {
+		return this.getSpeed();
+	}
 }

@@ -20,7 +20,6 @@ public class CheckCashingJawn {
 
         IPay[] payablePeeps = {hourlyEmployee,salariedEmployee, entrepreneur };
         Hr.payPerson(payablePeeps);
-
     }
 
 }

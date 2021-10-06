@@ -1,17 +1,22 @@
-package Animal;
+package animal;
 
-public class HouseCat extends Feline{
+public class Dog extends Canine{
 
-
-    public HouseCat(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
+    public Dog(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
         super(Name, AnimalType, Intelligence, Power, Mobility, Health, Stealth, Weight);
     }
-    public boolean scratch(){
+
+    public void eat (){
+        System.out.println("Eating");
+    }
+
+    public boolean fetch(){
         return true;
     }
+
     @Override
     public String toString() {
-        return "House Cat{" +
+        return "Dog{" +
                 "Intelligence=" + Intelligence +
                 ", Power=" + Power +
                 ", Defense=" + Defense +

@@ -1,18 +1,14 @@
-package Animal;
+package animal;
 
-public abstract class Feline extends Animal{
+public abstract  class Canine extends Animal{
 
-    public Feline(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
+    public Canine(String Name, String AnimalType, double Intelligence, double Power, double Mobility, double Health, double Stealth, double Weight) {
         super(Name, AnimalType, Intelligence, Power, Mobility, Health, Stealth, Weight);
-    }
-
-    public void eat (){
-        System.out.println("Eat People");
     }
 
     @Override
     public String toString() {
-        return "Feline{" +
+        return "Canine{" +
                 "Intelligence=" + Intelligence +
                 ", Power=" + Power +
                 ", Defense=" + Defense +
@@ -24,5 +20,4 @@ public abstract class Feline extends Animal{
                 ", AnimalType='" + AnimalType + '\'' +
                 '}';
     }
-
 }

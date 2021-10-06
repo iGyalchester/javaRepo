@@ -8,36 +8,42 @@ public class MainApp {
 	public static void main(String[] args) {
 		Vehicle[] vehicles = new Vehicle[3];
 
-		Car car = new Car("Honda", 21700, 137 );
+		Engine carEngine = new Engine(6);
+		Car car = new Car("Honda", 5, 27000, carEngine, 120);
 		vehicles[0] = car;
 
-		Truck truck = new Truck("GM", 28000, 114 );
+		Engine truckEngine = new Engine(8);
+		Truck truck = new Truck("GM", 3, 28000, truckEngine, 90);
 		vehicles[1] = truck;
 
-		Bike bike = new Bike("Suzuki", 12690, 190 );
+		Engine bikeEngine = new Engine(8);
+		MotorBike bike = new MotorBike("Suzuki", 1, 12690, bikeEngine, 225);
 		vehicles[2] = bike;
-
-		Vehicle.printVehicleNamesAndPrices(vehicles);
+		System.out.println("==========Names and Prices.==========");
+		VehicleApp.printVehicleNamesAndPrices(vehicles);
 
 		//arrayList of driveable cars
-		ArrayList <DriveAble> driveAbles = new ArrayList<DriveAble>();
-
+		ArrayList<DriveAble> driveAbles = new ArrayList<>();
 		driveAbles.add(car);
 		driveAbles.add(truck);
 
-		Vehicle.getSpeedOfDriveAbleVehicles(vehicles);
+		System.out.println("==========Speed of driveable vehicles.==========");
+		VehicleApp.getSpeedOfDriveAbleVehicles(driveAbles);
+
+		System.out.println("==========Car total before tax.==========");
+		System.out.println(car.totalBeforeTax(car));
+
+		System.out.println("==========Truck total after tax.==========");
+		System.out.println(truck.totalAfterTax(truck));
 
 
-		System.out.println(car.totalBeforeTax());
-		System.out.println(car.totalAfterTax());
+		Comparator<DriveAble> compare = new CompareBySpeed();
+		Collections.sort(driveAbles,compare);
 
-//		Collections.sort(driveAbles, new Comparator<DriveAble>() {
-//			@Override
-//			public int compare(DriveAble s1, DriveAble s2){
-//				return Integer.valueOf(s1.spee);
-//			}
-//		});
+		System.out.println("==========Compare by speed==========");
+		VehicleApp.getSpeedOfDriveAbleVehicles(driveAbles);
 
 	}
+
 
 }
